@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Beautiful Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-effects">
+        <div class="orb"></div>
+        <div class="orb"></div>
+        <div class="orb"></div>
+    </div>
+    <div class="grid-overlay"></div>
+    <div class="mouse-glow" id="mouseGlow"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <span class="logo">✦ beautiful</span>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#stats">Stats</a></li>
+            <li><a href="#cta">Contact</a></li>
+            <li><button class="nav-cta" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Get Started</button></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-badge">
+            <span class="dot"></span>
+            Now live &mdash; version 2.0
+        </div>
+        <h1>
+            Welcome to <br>
+            <span class="gradient-text">My Web Page</span>
+        </h1>
+        <p>A beautifully crafted web experience. Simple, elegant, and built with passion. Every detail thoughtfully designed to inspire.</p>
+        <div class="hero-actions">
+            <button class="btn btn-primary" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">
+                Explore <span class="arrow">→</span>
+            </button>
+            <button class="btn btn-secondary" id="magicBtn">
+                ✨ Try Magic
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-header reveal">
+            <h2>Built with <span class="gradient-text">purpose</span></h2>
+            <p>Every element serves a purpose. Clean design meets thoughtful interaction.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card reveal">
+                <div class="feature-icon">🎨</div>
+                <h3>Beautiful Design</h3>
+                <p>Modern gradients, smooth animations, and a carefully chosen color palette that delights the eye.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">⚡</div>
+                <h3>Lightning Fast</h3>
+                <p>Optimized performance with smooth transitions and buttery 60fps animations.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">📱</div>
+                <h3>Fully Responsive</h3>
+                <p>Looks stunning on every device — from the largest desktop to the smallest phone screen.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">✨</div>
+                <h3>Interactive</h3>
+                <p>Engaging micro-interactions and hover effects that make the experience feel alive.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">🌙</div>
+                <h3>Dark Mode</h3>
+                <p>Easy on the eyes with a premium dark theme that enhances visual focus.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">❤️</div>
+                <h3>Made with Love</h3>
+                <p>Crafted with care and attention to detail — because you deserve the best.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section class="counter-section" id="stats">
+        <div class="section-header reveal">
+            <h2>By the <span class="gradient-text">numbers</span></h2>
+            <p>Growing stronger every single day.</p>
+        </div>
+        <div class="counter-grid">
+            <div class="counter-item reveal">
+                <div class="counter-number" data-target="99">0</div>
+                <div class="counter-label">Lines of Code</div>
+            </div>
+            <div class="counter-item reveal">
+                <div class="counter-number" data-target="24">0</div>
+                <div class="counter-label">Hours Spent</div>
+            </div>
+            <div class="counter-item reveal">
+                <div class="counter-number" data-target="7">0</div>
+                <div class="counter-label">Cups of Coffee</div>
+            </div>
+            <div class="counter-item reveal">
+                <div class="counter-number" data-target="100">0</div>
+                <div class="counter-label">Dedication</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="cta">
+        <div class="cta-card reveal">
+            <h2>Ready to <span class="gradient-text">create</span> something?</h2>
+            <p>Let's build something amazing together. The possibilities are endless when you combine creativity with great tools.</p>
+            <button class="btn btn-primary" id="ctaBtn">
+                Let's Go <span class="arrow">→</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with <span class="heart">♥</span> — &copy; <span id="year"></span> All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
