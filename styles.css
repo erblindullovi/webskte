@@ -1131,7 +1131,6 @@ img { max-width: 100%; display: block; }
 }
 
 .signature-line {
-    display: block;
     width: 40px;
     height: 1px;
     background: linear-gradient(90deg, transparent, var(--gold), transparent);
